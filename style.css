@@ -1,33 +1,24 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh17440\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1567337710282-00832b415979?w=1200') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 .hero \{\
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),\
-  url('https://images.unsplash.com/photo-1567337710282-00832b415979?w=1200') center/cover no-repeat;\
-  height: 100vh;\
-  display: flex;\
-  align-items: center;\
-  justify-content: center;\
-\}\
-\
-.hero-content h1 \{\
-  font-size: 3rem;\
-  font-weight: bold;\
-\}\
-\
-.card:hover \{\
-  transform: scale(1.05);\
-  transition: 0.3s;\
-\}\
-\
-nav \{\
-  position: sticky;\
-  top: 0;\
-  z-index: 999;\
-\}}
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
