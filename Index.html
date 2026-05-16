@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste of Pakistan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">🍽️ Taste of Pakistan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero text-center text-white">
+    <div class="hero-content">
+      <h1>Welcome to Taste of Pakistan</h1>
+      <p>Authentic Pakistani Flavors — Biryani, Karahi & More!</p>
+      <a href="#menu" class="btn btn-warning btn-lg mt-3">View Our Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Menu</h2>
+      <div class="row">
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <h1>🍛</h1>
+              <h5 class="card-title">Chicken Biryani</h5>
+              <p class="card-text">Authentic spicy biryani with tender chicken.</p>
+              <p class="fw-bold text-warning">Rs. 450</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <h1>🍖</h1>
+              <h5 class="card-title">Mutton Karahi</h5>
+              <p class="card-text">Juicy mutton cooked in traditional spices.</p>
+              <p class="fw-bold text-warning">Rs. 950</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <h1>🫓</h1>
+              <h5 class="card-title">Naan & Karahi</h5>
+              <p class="card-text">Fresh naan with our special karahi sauce.</p>
+              <p class="fw-bold text-warning">Rs. 350</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <h1>🥗</h1>
+              <h5 class="card-title">Daal Makhani</h5>
+              <p class="card-text">Creamy lentils slow cooked to perfection.</p>
+              <p class="fw-bold text-warning">Rs. 250</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <h1>🍗</h1>
+              <h5 class="card-title">BBQ Platter</h5>
+              <p class="card-text">Mixed BBQ with seekh, tikka & boti.</p>
+              <p class="fw-bold text-warning">Rs. 1200</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <h1>🥤</h1>
+              <h5 class="card-title">Lassi</h5>
+              <p class="card-text">Chilled sweet or salty lassi.</p>
+              <p class="fw-bold text-warning">Rs. 150</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">About Us</h2>
+      <p class="lead">Taste of Pakistan is a family restaurant serving authentic Pakistani cuisine since 2010. We believe in fresh ingredients, traditional recipes, and warm hospitality.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Us</h2>
+      <p>📍 Blue Area, Islamabad, Pakistan</p>
+      <p>📞 +92-300-1234567</p>
+      <p>📧 info@tasteofpakistan.com</p>
+      <div class="mt-4">
+        <input type="text" id="name" placeholder="Your Name" class="form-control mb-2 w-50 mx-auto">
+        <input type="text" id="message" placeholder="Your Message" class="form-control mb-2 w-50 mx-auto">
+        <button class="btn btn-warning" onclick="sendMessage()">Send Message</button>
+        <p id="response" class="mt-3"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-3">
+    <p>© 2026 Taste of Pakistan. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
