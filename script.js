@@ -1,25 +1,14 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh17440\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+function sendMessage() {
+  let name = document.getElementById("name").value;
+  let message = document.getElementById("message").value;
 
-\f0\fs24 \cf0 function sendMessage() \{\
-  let name = document.getElementById("name").value;\
-  let message = document.getElementById("message").value;\
-\
-  if (name === "" || message === "") \{\
-    document.getElementById("response").innerHTML = \
-    "
-\f1 \uc0\u9888 \u65039 
-\f0  Please fill in all fields!";\
-    document.getElementById("response").style.color = "red";\
-  \} else \{\
-    document.getElementById("response").innerHTML = \
-    "
-\f1 \uc0\u9989 
-\f0  Thank you " + name + "! We received your message.";\
-    document.getElementById("response").style.color = "lightgreen";\
-  \}\
-\}}
+  if (name === "" || message === "") {
+    document.getElementById("response").innerHTML = 
+    "⚠️ Please fill in all fields!";
+    document.getElementById("response").style.color = "red";
+  } else {
+    document.getElementById("response").innerHTML = 
+    "✅ Thank you " + name + "! We received your message.";
+    document.getElementById("response").style.color = "lightgreen";
+  }
+}
